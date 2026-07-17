@@ -42,10 +42,10 @@ CREATE TABLE IF NOT EXISTS servicos (
 # Tabela Responsaveis
 #====================================
 cursor.execute('''
-CREATE TABLE IF NOT EXISTS responsaveis(
+CREATE TABLE IF NOT EXISTS responsaveis (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
-    telefone TEXT NOT NULL UNIQUE,
+    telefone TEXT NOT NULL UNIQUE
 )
 ''')
 
